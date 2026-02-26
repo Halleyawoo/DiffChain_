@@ -1,6 +1,6 @@
-# NeurIPS 2025 Submission
+# MICCAI 2026 Submission
 
-This repository contains the implementation code for our NeurIPS 2025 submission.
+This repository contains the implementation code for our MICCAI 2026 submission.
 
 > ### :lock: Anonymous Review Notice
 > This repository is anonymized for double-blind review.  
@@ -33,8 +33,8 @@ We propose a novel framework for semi-supervised medical image segmentation usin
 Train the model with the following command:
 
 # Example: Train the segmentation model on ACDC with 1 labeled patient
-CUDA_VISIBLE_DEVICES=0 python train_diffrect_chain_ACDC.py \
-    --exp ACDC/diffrect \
+CUDA_VISIBLE_DEVICES=0 python train_diff_chain_ACDC.py \
+    --exp ACDC/diffchain \
     --labelnum 1 \
     --num_classes 4 \
     --root_path ./datasets/ACDC
